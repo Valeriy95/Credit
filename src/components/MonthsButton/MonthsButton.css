@@ -1,0 +1,64 @@
+.popup-months-container {
+  width: 369px;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.popup-months-title {
+  font-family: "LabGrotesque-Medium";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.popup-months-btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 186px;
+  height: 36px;
+}
+
+.popup-month-btn {
+  padding: 6px 12px;
+  width: 41px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(238, 240, 242, 1);
+  font-family: "LabGrotesque-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.popup-month-btn:hover {
+  background: rgba(223, 227, 230, 1);
+  cursor: pointer;
+}
+
+.popup-month-btn:active {
+  background: linear-gradient(0deg, #ff5e56, #ff5e56),
+    linear-gradient(255.35deg, #dc3131 0.83%, rgba(255, 79, 79, 0) 108.93%);
+}
+
+.popup-month-btn.active {
+  width: 39px;
+  background: linear-gradient(0deg, #ff5e56, #ff5e56),
+    linear-gradient(255.35deg, #dc3131 0.83%, rgba(255, 79, 79, 0) 108.93%);
+  color: #fff;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+    .popup-months-container {
+        width: 186px;
+        height: 76px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+}

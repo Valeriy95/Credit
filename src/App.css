@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "LabGrotesque-Medium";
+  src: url("../../assets/fonts/LabGrotesque-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LabGrotesque-Regular";
+  src: url("../../assets/fonts/LabGrotesque-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

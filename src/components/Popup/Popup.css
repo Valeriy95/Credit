@@ -1,0 +1,196 @@
+.popup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.popup-container {
+  width: 552px;
+  height: 476px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  box-sizing: border-box;
+}
+
+.popup-container-result {
+  height: 625px;
+}
+
+.popup-title {
+  font-family: "LabGrotesque-Medium";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  margin: 0;
+  margin-top: 32px;
+}
+
+.popup-text {
+  width: 488px;
+  height: 96px;
+  font-family: "LabGrotesque-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(128, 128, 128, 1);
+  margin: 0;
+  margin-top: 8px;
+}
+
+/* popup-btn  */
+
+.popup-btn {
+  width: 76px;
+  padding: 0px;
+  margin-top: 8px;
+  font-family: "LabGrotesque-Medium";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(234, 0, 41, 1);
+  border: none;
+  background: #fff;
+}
+
+.popup-btn:hover {
+  cursor: pointer;
+  color: rgba(245, 58, 49, 1);
+}
+
+.popup-btn:active {
+  cursor: pointer;
+  color: rgba(234, 0, 41, 1);
+}
+
+/* popup-add-btn */
+
+.popup-add-btn {
+  width: 488px;
+  height: 56px;
+  margin-top: 47px;
+  font-family: "LabGrotesque-Medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(0deg, #ff5e56, #ff5e56),
+    linear-gradient(255.35deg, #dc3131 0.83%, rgba(255, 79, 79, 0) 108.93%);
+  box-shadow: 0px 0px 24px 0px rgba(234, 0, 41, 0.33);
+  transition: 0.5s;
+}
+
+.popup-add-btn-result {
+  margin-top: 70px;
+}
+
+.popup-add-btn:hover {
+  cursor: pointer;
+  background-color: rgba(234, 0, 41, 1);
+  transition: 0.5s;
+}
+
+/* popup-close-icon  */
+
+.popup-close-icon-container {
+  position: relative;
+}
+
+.popup-close-icon {
+  width: 18px;
+  height: 18px;
+  right: 28px;
+  top: 27px;
+  position: absolute;
+  background-image: url("../../assets/icon/Vector.svg");
+  background-repeat: no-repeat;
+}
+
+.popup-close-icon:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 769px) and (min-width: 480px) {
+  .popup-container {
+    width: 453px;
+  }
+
+  .popup-text {
+    width: 389px;
+  }
+
+  .popup-add-btn {
+    width: 389px;
+  }
+
+  .popup-close-icon {
+    right: 23px;
+  }
+
+  .popup-container-result {
+    height: 654px;
+  }
+
+  .popup-add-btn-result {
+    margin-top: 99px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .popup-container {
+    width: 320px;
+    height: 568px;
+    padding-left: 16px;
+    border-radius: 0px;
+  }
+
+  .popup-container-result {
+    height: 600px;
+  }
+
+  .popup-close-icon {
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    right: 18px;
+  }
+
+  .popup-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .popup-text {
+    width: 288px;
+    height: 80px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 13px;
+  }
+
+  .popup-btn {
+    margin-top: 6px;
+  }
+
+  .popup-months-container {
+    margin-top: 4px;
+  }
+
+  .popup-add-btn {
+    width: 288px;
+    height: 40px;
+    margin-top: 163px;
+  }
+
+  .popup-add-btn-result {
+    margin-top: 60px;
+  }
+}

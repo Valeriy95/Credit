@@ -1,0 +1,71 @@
+.input-container {
+  width: 488px;
+  height: 72px;
+  margin-top: 10px;
+}
+
+.input-label {
+  font-family: "LabGrotesque-Medium";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.text-input {
+  box-sizing: border-box;
+  padding-left: 10px;
+  width: 488px;
+  height: 40px;
+  margin-top: 7px;
+  border: 1px solid rgba(223, 227, 230, 1);
+  font-family: "LabGrotesque-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  border-radius: 3px;
+}
+
+.text-input::placeholder {
+  color: rgba(190, 197, 204, 1);
+}
+
+.text-input::-webkit-outer-spin-button,
+.text-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.text-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: rgba(223, 227, 230, 1);
+}
+
+.text-input:hover {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 769px) and (min-width: 480px) {
+  .input-container {
+    width: 389px;
+  }
+
+  .text-input {
+    width: 389px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+    .input-container {
+        width: 288px;
+    }
+
+    .text-input {
+        width: 288px;
+    }
+}

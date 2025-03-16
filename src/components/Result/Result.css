@@ -1,0 +1,80 @@
+.result-container {
+  width: 201px;
+  height: 126px;
+}
+
+.result-title {
+  font-family: "LabGrotesque-Medium";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-top: 22px;
+}
+
+.result-btn-container {
+    margin-top: 10px;
+}
+
+.result-btn {
+  padding: 6px 12px;
+  width: 64px;
+  height: 36px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgba(238, 240, 242, 1);
+  font-family: "LabGrotesque-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.result-btn:last-child {
+    width: 75px;
+    margin-left: 6px;
+}
+
+.result-btn:hover {
+  background: rgba(223, 227, 230, 1);
+  cursor: pointer;
+}
+
+.result-btn.active {
+  background: linear-gradient(0deg, #ff5e56, #ff5e56),
+    linear-gradient(255.35deg, #dc3131 0.83%, rgba(255, 79, 79, 0) 108.93%);
+  color: #fff;
+}
+
+.result-amount {
+    font-family: "LabGrotesque-Regular";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 30px;
+}
+
+@media (max-width: 769px) and (min-width: 480px) {
+
+    .result-title {
+        margin-top: 20px;
+    }
+
+    .result-btn-container {
+        margin-top: 16px;
+    }
+
+    .result-amount {
+        margin-top: 26px;
+    }
+
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+    .result-title {
+        margin-top: 35px;
+    }
+}
